@@ -368,3 +368,25 @@ console.log(!!value);
 // returns true
 
 // ******************** //
+
+//// Undefined and Null ////
+
+console.log("********************UNDEFINED AND NULL:");
+
+var xID;
+console.log(typeof xID);
+// returns undefined
+
+var xID = null;
+console.log(typeof xID);
+// returns Object, null is an empty object
+
+console.log(undefined == null);
+// returns true
+// returns JS treats undefined and null as equal
+
+console.log(undefined === null);
+// returns false
+// one has a type of undefined and the other a type of object
+
+// ******************** //
