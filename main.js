@@ -247,3 +247,35 @@ for (var key in productObject) {
   console.log(key + ": " + productObject[key]);
 }
 // returns product: widget quantity: 4 price: 9
+
+// ******************** //
+
+//******** Variables, Types, and Scope *********//
+
+console.log("Variables, Types, and Scope:");
+
+//// Hoisting ////
+// Having access to variables before they are even declared
+// It's as if the declarations are lifted (hoisted) to the top of the
+// function before execution.
+// Hoisting can be confusing and can be the source of many bugs
+
+console.log(id);
+var id = 9000;
+// returns undefined because the compiler knows about the global variable, but
+// still doesn't know it's value
+
+var total = price * quantity;
+var price = 3;
+var quantity = 5;
+console.log(total);
+// returns NaN because we are evaluating two values before they are created
+
+showProduct();
+function showProduct() {
+  console.log("Showing a Product");
+}
+// returns Showing a Product.
+// Hoising works well with function declaration (naming a function)
+
+// ******************** //
