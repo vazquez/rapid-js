@@ -101,3 +101,81 @@ var f6 = function () {
   console.log("Order activated");
 }
 f6();
+
+// ******************** //
+
+//// If and Switch Statements ////
+
+console.log("IF/ELSE & SWITCH:");
+
+// Conditional statement
+var total = 99;
+var freeShip = false;
+if (total >= 50) {
+  freeShip = true;
+}
+console.log(freeShip);
+// returns true
+
+var total = 99;
+var freeShip = false;
+if (total >= 100) {
+  freeShip = true;
+}
+console.log(freeShip);
+// returns false
+
+var total = 99;
+var shipping;
+if (total >= 100) {
+  shipping = true;
+} else {
+  shipping = false;
+}
+console.log(shipping);
+// returns false
+
+var orderType = "business";
+var shipMethod;
+if (orderType == "business") {
+  shipMethod = "Fedex";
+} else if (orderType == "personal") {
+  shipMethod = "UPS";
+} else {
+  shipMethod = "USPS"
+}
+console.log(shipMethod);
+// returns Fedex
+
+var orderType = "vacation";
+var shipMethod;
+switch (orderType) {
+  case "business":
+    shipMethod = "Fedex";
+    break;
+  case "personal":
+    shipMethod = "UPS";
+    break;
+  default:
+    shipMethod = "USPS";
+}
+console.log(shipMethod);
+// returns USPS
+
+var total = 99;
+var discount;
+switch (true) {
+  case total >=50 && total <75:
+    discount = 10;
+    break;
+  case total >=75 && total <100:
+    discount = 15;
+    break;
+  case total >=100:
+    discount = 20;
+    break;
+  default:
+    discount= 0;
+}
+console.log(discount);
+// returns 15
