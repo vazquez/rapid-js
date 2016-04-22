@@ -62,7 +62,7 @@ console.log(typeof t9);
 
 //// Function Fundamentals ////
 
-console.log("FUNCTIONS:");
+console.log("**************FUNCTIONS:");
 
 function f1() {
   console.log("printing");
@@ -106,7 +106,7 @@ f6();
 
 //// If and Switch Statements ////
 
-console.log("IF/ELSE & SWITCH:");
+console.log("**********************IF/ELSE & SWITCH:");
 
 // Conditional statement
 var total = 99;
@@ -184,7 +184,7 @@ console.log(discount);
 
 //// While and While do Statements ////
 
-console.log("WHILE AND WHILE DO:");
+console.log("*******************WHILE AND WHILE DO:");
 
 var count = 3;
 var item = 0;
@@ -213,7 +213,7 @@ do {
 
 //// For and For In ////
 
-console.log("FOR and FOR IN:");
+console.log("************************FOR and FOR IN:");
 
 var count = 3;
 for (var i = 0; i < count; i++) {
@@ -252,7 +252,7 @@ for (var key in productObject) {
 
 //******** Variables, Types, and Scope *********//
 
-console.log("Variables, Types, and Scope:");
+console.log("*********************Variables, Types, and Scope:");
 
 //// Hoisting ////
 // Having access to variables before they are even declared
@@ -282,7 +282,7 @@ function showProduct() {
 
 //// Numbers ////
 
-console.log("NUMBERS:");
+console.log("*********************NUMBERS:");
 
 var quantity = 2; //integer
 var price = 0.99; //floating point number
@@ -312,5 +312,30 @@ console.log(price / count);
 
 console.log(typeof NaN);
 // returns number
+
+// ******************** //
+
+//// Strings ////
+
+console.log("********************STRINGS:");
+
+console.log("The order is \"In Progress\"");
+// returns The order is "In Progress"
+
+var word = "Ricardo";
+console.log(word.length);
+// returns 7
+
+var word = "   Ricardo   ";
+console.log("[" + word.trim() + "]");
+// returns [Ricardo]
+
+var word = "Ricardo";
+console.log(word.toLowerCase());
+// returns ricardo
+
+var word = "Ricardo";
+console.log(word.toUpperCase());
+// returns RICARDO
 
 // ******************** //
