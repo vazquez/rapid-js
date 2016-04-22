@@ -390,3 +390,34 @@ console.log(undefined === null);
 // one has a type of undefined and the other a type of object
 
 // ******************** //
+
+//// Global Scope ////
+
+console.log("********************GLOBAL SCOPE:");
+
+var yID = "Y100";
+console.log(yID + " and " + window.yID);
+// returns y100 and y100
+// this is because the var yID is a global var
+
+console.log(this === window);
+// returns true because "this" is a keyword that is set to the global object
+
+var desc = "not updated";
+function update() {
+  desc = "updated"
+}
+update();
+console.log(desc);
+// returns updated
+// variable exists in global scope
+
+function update() {
+  xDesc = "this is a description";
+}
+update();
+console.log(xDesc);
+// returns description
+// variable gets created even if it hasn't been defined
+
+// ******************** //
