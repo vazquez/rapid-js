@@ -202,7 +202,6 @@ do {
 } while (item < count);
 // returns item: 0 1 2
 
-
 var count = 3;
 var item = undefined;
 do {
@@ -211,3 +210,40 @@ do {
 // returns item: NaN
 
 // ******************** //
+
+//// For and For In ////
+
+console.log("FOR and FOR IN:");
+
+var count = 3;
+for (var i = 0; i < count; i++) {
+  console.log(i);
+}
+// returns 0 1 2
+
+var count = 3;
+var i = 0;
+for (; i < count; i++) {
+  console.log(i);
+}
+// returns 0 1 2
+
+var item = {
+  product: "widget",
+  quantity: 4,
+  price: 9
+}
+for (var field in item) {
+  console.log(field);
+}
+// returns product quantity price
+
+var productObject = {
+  product: "widget",
+  quantity: 4,
+  price: 9
+}
+for (var key in productObject) {
+  console.log(key + ": " + productObject[key]);
+}
+// returns product: widget quantity: 4 price: 9
