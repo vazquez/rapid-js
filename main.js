@@ -279,3 +279,38 @@ function showProduct() {
 // Hoising works well with function declaration (naming a function)
 
 // ******************** //
+
+//// Numbers ////
+
+console.log("NUMBERS:");
+
+var quantity = 2; //integer
+var price = 0.99; //floating point number
+console.log(quantity * price);
+// returns 1.98
+
+var price = "0.99";
+console.log(typeof price);
+// returns string
+
+var value = 3.2e4;
+console.log(value);
+// returns 32000
+
+var n = Number.MAX_VALUE * 2;
+console.log(n);
+// returns Infinity because it's too large
+
+var n = Infinity;
+console.log(typeof n);
+// returns number
+
+var count;
+var price = 5;
+console.log(price / count);
+// returns NaN
+
+console.log(typeof NaN);
+// returns number
+
+// ******************** //
