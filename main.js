@@ -420,4 +420,38 @@ console.log(xDesc);
 // returns description
 // variable gets created even if it hasn't been defined
 
+"use strict";
+function update() {
+  xDesc = "this is a description";
+}
+update();
+console.log(xDesc);
+// returns ReferenceError due to strict mode
+
+// ******************** //
+
+//// Function Scope ////
+
+console.log("********************FUNCTION SCOPE:");
+// Functions get their own SCOPE
+
+var desc = "hello";
+function fScope(){
+  var desc = "goodbye";
+  console.log(desc);
+}
+console.log(desc);
+fScope();
+// returns hello goodbye
+
+var fdesc = "original product";
+function fScope2(){
+  var updateProduct = function(){
+    console.log(fdesc);
+  }
+  updateProduct();
+}
+fScope2();
+// returns original product because the var did exist in global Scope
+
 // ******************** //
