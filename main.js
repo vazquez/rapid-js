@@ -179,3 +179,35 @@ switch (true) {
 }
 console.log(discount);
 // returns 15
+
+// ******************** //
+
+//// While and While do Statements ////
+
+console.log("WHILE AND WHILE DO:");
+
+var count = 3;
+var item = 0;
+while (item < count) {
+  console.log("item: " + item);
+  item++;
+  // or console.log("item: " + item++);
+}
+// returns item: 0 1 2
+
+var count = 3;
+var item = 0;
+do {
+  console.log("item: " + item++);
+} while (item < count);
+// returns item: 0 1 2
+
+
+var count = 3;
+var item = undefined;
+do {
+  console.log("item: " + item++);
+} while (item < count);
+// returns item: NaN
+
+// ******************** //
