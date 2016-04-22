@@ -339,3 +339,32 @@ console.log(word.toUpperCase());
 // returns RICARDO
 
 // ******************** //
+
+//// Boolean ////
+
+console.log("********************BOOLEAN:");
+
+var isSpecial = true;
+if (isSpecial) {
+  console.log("it's true");
+}
+// returns it's true
+
+// var isSpecial = True;
+if (isSpecial) {
+  console.log("it's true");
+}
+// returns ReferenceError because of capital T
+
+// undefined and null result in false
+
+var value = 99;
+console.log(typeof !!value);
+// Creates a boolean value out of any variable
+// returns Boolean
+
+var value = "value";
+console.log(!!value);
+// returns true
+
+// ******************** //
