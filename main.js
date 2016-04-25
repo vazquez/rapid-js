@@ -455,3 +455,51 @@ fScope2();
 // returns original product because the var did exist in global Scope
 
 // ******************** //
+
+//// Operators ////
+
+console.log("********************OPERATORS:");
+
+var oTotal = 5.1 + 3.3;
+// returns 8.399999
+console.log(oTotal.toFixed(2));
+// returns 8.40. Rounds to 2 decimals.
+
+var oTotal = "300" - "200";
+console.log(oTotal);
+// returns the number 100. JS converts the strings into number
+// when it sees the - sign
+
+var obj = {
+  value: function(){
+    return 100;
+  }
+};
+var aTotal = 300 - obj.value();
+console.log(aTotal);
+// returns 200
+
+var level = 5;
+++level; //forward increment, could be written as level++
+console.log(level);
+// returns 6
+
+var num1 = parseInt("1010", 2);
+var num2 = parseInt("0110", 2);
+var nTotal = num1 & num2;
+console.log(nTotal.toString(2));
+// returns 10
+
+var value = !true;
+console.log(value);
+// returns false
+
+var defaultSetting = {
+  who: "default"
+};
+var userSetting = {
+  who: "ricardo"
+};
+var auth = userSetting.who || defaultSetting.who;
+console.log(auth);
+// returns ricardo because there is a usersetting present.
