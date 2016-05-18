@@ -503,3 +503,9 @@ var userSetting = {
 var auth = userSetting.who || defaultSetting.who;
 console.log(auth);
 // returns ricardo because there is a usersetting present.
+
+// ******************** //
+
+//// Arrays ////
+
+console.log("********************ARRAYS:");
